@@ -87,7 +87,7 @@ mkdir pyspark
 cd pyspark
 ```
 
-Dans le second _Terminal_, rapatriez l'ensemble des scripts _PySpark_ex*.py_ du répertoire _TP_BigData_ECL/TP_Spark/scripts_ dans le répertoire que nous venons de créer :
+Dans le second _Terminal_, rapatriez l'ensemble des scripts _PySpark_ex*.py_ du répertoire _TP_Spark/scripts_ dans le répertoire que nous venons de créer :
 ```bash
 for f in PySpark_ex*.py; do docker cp $f hadoop-master:/root/pyspark; done
 ```
