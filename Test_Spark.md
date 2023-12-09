@@ -37,29 +37,19 @@ ls
 ```
 Vous voyez apparaître les scripts python _Hadoop_ du TP précédent. Nous allons maintenant importer le même programme mais rédigé en _pyspark_. 
 
-a. **Si vous avez conservé les fichiers sur votre DD** :
+a. Depuis un second _Terminal_, dans un répertoire temporaire, exécutez
 
-- Ouvrez un _Terminal_ et rendez-vous dans votre répertoire local (ce répertoire s'appelle : `TP_BigData_ECL`). 
-- Mettez à jour ce dépôt avec la commande
 ```bash
-git pull
+git clone https://github.com/melossmani/TP_Spark.git
 ```
+  b. Copiez le fichier déposé dans le sous-répertoire _TP\_Spark/wordcount_ sur le _Namenode_ à l'aide de la commande
 
-b. **Si vous avez supprimé les fichiers de votre DD** :
-
-- Depuis un second _Terminal_, dans un répertoire temporaire, exécutez 
 ```bash
-git clone https://gitlab.ec-lyon.fr/sderrode/TP_BigData_ECL.git
-```
-
-- Copiez le fichier déposé dans le sous-répertoire _TP\_BigData\_ECL/TP\_Spark/wordcount_ sur le _Namenode_ à l'aide de la commande
-```bash
-cd TP_BigData_ECL/TP_Spark/wordcount
+cd TP_Spark/wordcount
 docker cp PySpark_wc.py hadoop-master:/root/wordcount
 ```
 
-- Revenez au premier _Terminal_, et vérifiez que le fichier est là où il est attendu !
-
+c. Revenez au premier _Terminal_, et vérifiez que le fichier est là où il est attendu !
 
 Avant de lancer le script, il convient de vérifier que le répertoire _sortie_ n'existe pas déjà sous _HDFS_. Pour faire cela, on tente de l'effacer (qu'il existe ou non, c'est plus sûr et plus rapide !) :
 ```bash
