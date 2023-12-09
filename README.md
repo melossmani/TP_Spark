@@ -1,4 +1,4 @@
-# TP # - Spark
+# TP - Spark
 
 Ce TP fait suite au cours sur le _framework_ [__Apache Spark__](https://spark.apache.org), développé et maintenu par la [Fondation Apache](https://www.apache.org).
 
