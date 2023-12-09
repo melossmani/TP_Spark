@@ -42,7 +42,7 @@ a. Depuis un second _Terminal_, dans un répertoire temporaire, exécutez
 ```bash
 git clone https://github.com/melossmani/TP_Spark.git
 ```
-  b. Copiez le fichier déposé dans le sous-répertoire _TP\_Spark/wordcount_ sur le _Namenode_ à l'aide de la commande
+b. Copiez le fichier déposé dans le sous-répertoire _TP\_Spark/wordcount_ sur le _Namenode_ à l'aide de la commande
 
 ```bash
 cd TP_Spark/wordcount
