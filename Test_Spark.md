@@ -35,7 +35,7 @@ Entrez dans le répertoire _wordcount_, listez les fichiers contenus dans ce ré
 cd wordcount
 ls
 ```
-Vous voyez apparaître les scripts python _Hadoop_ du [TP2](./TP2). Nous allons maintenant importer le même programme mais rédigé en _pyspark_. 
+Vous voyez apparaître les scripts python _Hadoop_ du TP précédent. Nous allons maintenant importer le même programme mais rédigé en _pyspark_. 
 
 a. **Si vous avez conservé les fichiers sur votre DD** :
 
