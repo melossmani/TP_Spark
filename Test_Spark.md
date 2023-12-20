@@ -60,7 +60,7 @@ Ensuite, lancez le programme de comptage de mots sur le livre _dracula_, en loca
 ```bash
 spark-submit --deploy-mode client --master local[2] PySpark_wc.py input/dracula
 ```
-Le _Job_ est exécuté localement, sur le client, en exploitant 2 _threads_. Le répertoire de sortie est fixé dans le programme _Python_. Le mode `--deploy-mode cluster` permet d’exécuter le programme pilote sur le cluster _Hadoop_ (mode principalement utilisé en phase de production, et non en phase de mise au point). Dans ce cas, il vous faut aussi préciser l'option `--master yarn` (puisque notre cluster est géré par _Hadoop Yarn_, où _Yarn_ est le nom du moteur _Hadoop_). __Attention__ Je n'ai pas réussi de mon côté à faire fonctionner le programme dans ce mode _cluster_. Sans doute un pb de configuration du container _Docker_!
+Le _Job_ est exécuté localement, sur le client, en exploitant 2 _threads_. Le répertoire de sortie est fixé dans le programme _Python_. Le mode `--deploy-mode cluster` permet d’exécuter le programme pilote sur le cluster _Hadoop_. Dans ce cas, il vous faut aussi préciser l'option `--master yarn` (puisque notre cluster est géré par _Hadoop Yarn_, où _Yarn_ est le nom du moteur _Hadoop_). __Attention__ Je n'ai pas réussi de mon côté à faire fonctionner le programme dans ce mode _cluster_. Sans doute un pb de configuration du container _Docker_!
 
 Pour vérifier le résultat, scruter le contenu du répertoire _sortie_ sous _HDFS_ :
 ```bash
